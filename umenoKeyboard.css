@@ -1,15 +1,146 @@
+/* =====================================================
+ * Steam Deck Customizable Keyboard
+ *
+ * Main base stylesheet. The idea:
+ * - Keep layout close to default
+ * - Expose all important knobs via :root variables
+ * - Make it easy to fork and restyle
+ * ===================================================== */
+
 :root {
-    --sdkb-bg-color: #42001dff;
-    --sdkb-key-bg: #faf2f0ff;
-    --sdkb-key-bg-hover: #dcef9dff;
-    --sdkb-key-bg-pressed: #dcef9dff;
-    --sdkb-key-border-color: #2b2d3a;
-    --sdkb-key-border-color-active: #3c3f52;
-    --sdkb-key-text-color: #402835ff;
-    --sdkb-key-text-secondary: #945d7bff;
-    --sdkb-accent: #e1afc5ff;
-    --sdkb-accent-text: #ffff;
-    --sdkb-key-radius: 20px;
-    --sdkb-key-radius-special: 20px;
+  /* ===== Colors ===== */
+  --sdkb-bg-color: #42001dff;
+
+  --sdkb-key-bg: #faf2f0ff;
+  --sdkb-key-bg-hover: #dcef9dff;
+  --sdkb-key-bg-pressed: #d4eb87ff;
+
+  --sdkb-key-border-color: #2b2d3a;
+  --sdkb-key-border-color-active: #3c3f52;
+
+  --sdkb-key-text-color: #402835ff;
+  --sdkb-key-text-secondary: #945d7bff;
+
+  /* Accent (e.g. Enter, active layout) */
+  --sdkb-accent: #e1afc5ff;
+  --sdkb-accent-text: #0b1015;
+
+  --petalo: #feb1b4ff;
+  --polen: #f3da79ff;
+
+  /* ===== Shape / spacing ===== */
+  --sdkb-key-radius: 20px;
+  --sdkb-key-radius-special: 14px;
 }
 
+
+
+
+
+ /* =====================================================
+ * Map high-level sdkb variables to Steam's DefaultTheme
+ * ===================================================== */
+
+.DefaultTheme {
+  /* Overall keyboard background */
+  --background-color: var(--sdkb-bg-color);
+
+  /* Base key colors */
+  --key-background-color: var(--sdkb-key-bg);
+  --key-focused-background-color: var(--sdkb-key-bg-hover);
+
+  --key-color: var(--sdkb-key-text-color);
+  --key-focused-color: var(--sdkb-key-text-color);
+
+  /* Function / special keys mapped to accent */
+  --key-meta-background-color: var(--sdkb-accent);
+  --key-meta-color: var(--sdkb-accent-text);
+
+  --key-tab-background-color: var(--sdkb-accent);
+  --key-tab-color: var(--sdkb-accent-text);
+
+  --key-caps-background-color: var(--sdkb-accent);
+  --key-caps-color: var(--sdkb-accent-text);
+
+  --key-shift-background-color: var(--sdkb-accent);
+  --key-shift-color: var(--sdkb-accent-text);
+  --key-shift-label-color: var(--sdkb-accent-text);
+  --key-focused-shift-label-color: var(--sdkb-accent-text);
+
+  --key-enter-background-color: var(--sdkb-accent);
+  --key-enter-color: var(--sdkb-accent-text);
+  --key-enter-action-button-glyph-color: var(--sdkb-accent-text);
+
+  --key-backspace-background-color: var(--sdkb-accent);
+  --key-backspace-color: var(--sdkb-accent-text);
+
+  --key-spacebar-background-color: var(--sdkb-key-bg);
+  --key-spacebar-color: var(--sdkb-key-text-color);
+
+  /* Extended keys / emoji / toggles use accent+bg */
+  --key-extendedkey-background-color: var(--sdkb-accent);
+  --key-extendedkey-color: var(--sdkb-key-text-color);
+  --key-extendedkey-focused-background-color: var(--sdkb-accent);
+  --key-extendedkey-focused-color: var(--sdkb-accent-text);
+  --key-extendedkey-hover-background-color: var(--sdkb-accent);
+  --key-extendedkey-hover-color: var(--sdkb-accent-text);
+
+  --key-toggleon-background-color: var(--sdkb-accent);
+  --key-toggleon-color: var(--sdkb-accent-text);
+  --key-toggleoneshot-color: var(--sdkb-accent-text);
+
+  --key-emoji-category-highlight-background-color: var(--sdkb-accent);
+  --key-emoji-focused-background-color: var(--sdkb-key-bg-hover);
+
+  --key-touched-background-color: var(--sdkb-key-bg-hover);
+  --key-touched-color: var(--sdkb-key-text-color);
+
+  --key-pointer-background-color: var(--sdkb-key-bg);
+  --key-pointer-stroke-color: var(--sdkb-accent-text);
+
+  --key-deadkey-background-color: var(--sdkb-key-bg);
+  --key-deadkeyinactive-color: var(--sdkb-key-text-secondary);
+  --key-deadkeyactive-color: var(--sdkb-key-bg-pressed);
+}
+
+/* =====================================================
+ * Apply rounding to actual key hit areas
+ * ===================================================== */
+
+[class^="virtualkeyboard_KeyboardKeyHitArea_"],
+[class*="virtualkeyboard_KeyboardKeyHitArea_"] {
+  border-radius: var(--sdkb-key-radius) !important;
+  overflow: hidden;
+}
+
+/* Acento de teclas especiales y decorado para hacer flores*/
+/* Flores */
+div[data-key-row="0"][data-key-col="9"]{--key-background-color: var(--petalo) !important;}
+div[data-key-row="0"][data-key-col="10"]{--key-background-color: var(--petalo) !important;}
+div[data-key-row="1"][data-key-col="4"]{--key-background-color: var(--petalo) !important;}
+div[data-key-row="1"][data-key-col="5"]{--key-background-color: var(--petalo) !important;}
+div[data-key-row="1"][data-key-col="8"]{--key-background-color: var(--petalo) !important;}
+div[data-key-row="1"][data-key-col="9"]{--key-background-color: var(--polen) !important;}
+div[data-key-row="1"][data-key-col="10"]{--key-background-color: var(--petalo) !important;}
+div[data-key-row="2"][data-key-col="3"]{--key-background-color: var(--petalo) !important;}
+div[data-key-row="2"][data-key-col="4"]{--key-background-color: var(--polen) !important;}
+div[data-key-row="2"][data-key-col="5"]{--key-background-color: var(--petalo) !important;}
+div[data-key-row="2"][data-key-col="8"]{--key-background-color: var(--petalo) !important;}
+div[data-key-row="2"][data-key-col="9"]{--key-background-color: var(--petalo) !important;}
+div[data-key-row="3"][data-key-col="3"]{--key-background-color: var(--petalo) !important;}
+div[data-key-row="3"][data-key-col="4"]{--key-background-color: var(--petalo) !important;}
+
+/* Acentuado de otras teclas especiales */
+div[data-key-row="0"][data-key-col="0"]{--key-background-color: var(--sdkb-accent);}
+div[data-key-row="0"][data-key-col="13"]{--key-background-color: var(--sdkb-accent);}
+div[data-key-row="1"][data-key-col="13"]{--key-background-color: var(--sdkb-accent);}
+div[data-key-row="4"]{--key-background-color: var(--sdkb-accent);}
+
+/* Decorado de barra espaciadora */
+div[data-key-row="4"][data-key-col="2"] ._2KhPXikozxMpbIRo_6jPxW.ia41Q17gwzFVtCRdemWuj {
+    background-image: url('https://raw.githubusercontent.com/SomePotato/UmenoKeyboard/8e7d3c93f2faf481d27532d8a291a91fde3ea2d5/media/umegaeUmeno_logo.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}

@@ -1,9 +1,13 @@
 {
-    "name": "Umeno Keyboard",
-    "version": "1.0",
-    "inject":{
-        "umenoKeyboard.css":[
-            "SP"
-        ]
-    }
+  "name": "Umeno Keyboard",
+  "author": "Not",
+  "version": "v1.0.0",
+  "description": "Keyboard based on Umegae Umeno design",
+  "target": "Keyboard",
+  "manifest_version": 8,
+  "inject": {
+    "umenoKeyboard.css": ["bigpicture", "QuickAccess", "MainMenu"]
+  },
+  "patches": {},
+  "components": []
 }
