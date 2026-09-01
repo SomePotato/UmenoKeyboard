@@ -115,20 +115,20 @@
 
 /* Acento de teclas especiales y decorado para hacer flores*/
 /* Flores */
-div[data-key-row="0"][data-key-col="9"]{--key-background-color: var(--petalo) !important;}
-div[data-key-row="0"][data-key-col="10"]{--key-background-color: var(--petalo) !important;}
-div[data-key-row="1"][data-key-col="4"]{--key-background-color: var(--petalo) !important;}
-div[data-key-row="1"][data-key-col="5"]{--key-background-color: var(--petalo) !important;}
-div[data-key-row="1"][data-key-col="8"]{--key-background-color: var(--petalo) !important;}
-div[data-key-row="1"][data-key-col="9"]{--key-background-color: var(--polen) !important;}
-div[data-key-row="1"][data-key-col="10"]{--key-background-color: var(--petalo) !important;}
-div[data-key-row="2"][data-key-col="3"]{--key-background-color: var(--petalo) !important;}
-div[data-key-row="2"][data-key-col="4"]{--key-background-color: var(--polen) !important;}
-div[data-key-row="2"][data-key-col="5"]{--key-background-color: var(--petalo) !important;}
-div[data-key-row="2"][data-key-col="8"]{--key-background-color: var(--petalo) !important;}
-div[data-key-row="2"][data-key-col="9"]{--key-background-color: var(--petalo) !important;}
-div[data-key-row="3"][data-key-col="3"]{--key-background-color: var(--petalo) !important;}
-div[data-key-row="3"][data-key-col="4"]{--key-background-color: var(--petalo) !important;}
+div[data-key-row="0"][data-key-col="9"]{--key-background-color: var(--petalo);}
+div[data-key-row="0"][data-key-col="10"]{--key-background-color: var(--petalo);}
+div[data-key-row="1"][data-key-col="4"]{--key-background-color: var(--petalo);}
+div[data-key-row="1"][data-key-col="5"]{--key-background-color: var(--petalo);}
+div[data-key-row="1"][data-key-col="8"]{--key-background-color: var(--petalo);}
+div[data-key-row="1"][data-key-col="9"]{--key-background-color: var(--polen);}
+div[data-key-row="1"][data-key-col="10"]{--key-background-color: var(--petalo);}
+div[data-key-row="2"][data-key-col="3"]{--key-background-color: var(--petalo);}
+div[data-key-row="2"][data-key-col="4"]{--key-background-color: var(--polen);}
+div[data-key-row="2"][data-key-col="5"]{--key-background-color: var(--petalo);}
+div[data-key-row="2"][data-key-col="8"]{--key-background-color: var(--petalo);}
+div[data-key-row="2"][data-key-col="9"]{--key-background-color: var(--petalo);}
+div[data-key-row="3"][data-key-col="3"]{--key-background-color: var(--petalo);}
+div[data-key-row="3"][data-key-col="4"]{--key-background-color: var(--petalo);}
 
 /* Acentuado de otras teclas especiales */
 div[data-key-row="0"][data-key-col="0"]{--key-background-color: var(--sdkb-accent);}
