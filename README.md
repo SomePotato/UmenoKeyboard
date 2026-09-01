@@ -9,6 +9,8 @@ A keyboard design inspired by Umegae Umeno design
 
 Follow Umeno:
 Youtube: https://www.youtube.com/@%E6%A2%85%E3%83%B6%E6%9E%9D%E3%81%86%E3%82%81%E3%81%AE
+
+
 Twitter(X): https://x.com/umegaeumeno/
 
 <img width="946" height="2048" alt="HGb_8GUb0AABaaI" src="https://github.com/user-attachments/assets/95e54e41-3f15-40f9-8eea-f70fb95ff27f" />
