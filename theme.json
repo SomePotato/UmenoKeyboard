@@ -1,7 +1,7 @@
 {
   "name": "Umeno Keyboard",
   "author": "Not",
-  "version": "v1.0.0",
+  "version": "v1.0.1",
   "description": "Keyboard based on Umegae Umeno design",
   "target": "Keyboard",
   "manifest_version": 8,
