@@ -144,3 +144,9 @@ div[data-key-row="4"][data-key-col="2"] ._2KhPXikozxMpbIRo_6jPxW.ia41Q17gwzFVtCR
     background-repeat: no-repeat;
     background-blend-mode: darken;
 }
+
+/* Estilos para el teclado de emojis interno de Steam */
+div[data-key-row="-1"][data-key-col="4"]{--key-background-color: var(--background-color);}
+div#virtual\ keyboard div._3td3cAnGbbbAOXW8x2pD-j._1l1HfVaf7AVBv1AWT2PB7b.Panel {
+    background: var(--background-color);
+}
