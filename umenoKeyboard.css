@@ -137,7 +137,9 @@ div[data-key-row="1"][data-key-col="13"]{--key-background-color: var(--sdkb-acce
 div[data-key-row="4"]{--key-background-color: var(--sdkb-accent);}
 
 /* Decorado de barra espaciadora */
-div[data-key-row="4"][data-key-col="2"] ._2KhPXikozxMpbIRo_6jPxW.ia41Q17gwzFVtCRdemWuj {
+div[data-key-row="4"][data-key-col="2"] ._2KhPXikozxMpbIRo_6jPxW.ia41Q17gwzFVtCRdemWuj,
+/* Barra de espacio especial para los stickers */
+div[data-key-row="4"][data-key-col="1"] ._2KhPXikozxMpbIRo_6jPxW.ia41Q17gwzFVtCRdemWuj {
     background-image: url('https://raw.githubusercontent.com/SomePotato/UmenoKeyboard/8e7d3c93f2faf481d27532d8a291a91fde3ea2d5/media/umegaeUmeno_logo.svg');
     background-position: center;
     background-size: contain;
@@ -146,22 +148,11 @@ div[data-key-row="4"][data-key-col="2"] ._2KhPXikozxMpbIRo_6jPxW.ia41Q17gwzFVtCR
 }
 
 /* Estilos para el teclado de emojis interno de Steam */
-
     /*  Fondo donde se encuentran los stickers  */
 ._45rH7-kY4P2uVEb3TxZhm.DefaultTheme div._3td3cAnGbbbAOXW8x2pD-j._1l1HfVaf7AVBv1AWT2PB7b.Panel {
     background: var(--background-color);
 }
-
     /*  Botón separador de los stickers de Steam y los emojis */
 ._2KhPXikozxMpbIRo_6jPxW._2LxGPpn7ZBJvhyT4bD_ABC.Col_4.KeyTheme_ {
     background: var(--background-color);
-}
-
-    /*  Barra de espacio especial para los stickes  */
-div[data-key-row="4"][data-key-col="1"] ._2KhPXikozxMpbIRo_6jPxW.ia41Q17gwzFVtCRdemWuj {
-    background-image: url('https://raw.githubusercontent.com/SomePotato/UmenoKeyboard/8e7d3c93f2faf481d27532d8a291a91fde3ea2d5/media/umegaeUmeno_logo.svg');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
 }
